@@ -1,6 +1,6 @@
 public class Lesson20 {
     public static void main(String[] args) {
-    Humanoid human1 = new Humanoid("Bob", 15);
+        Humanoid human1 = new Humanoid("Bob", 15);
     }
 }
 
