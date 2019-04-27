@@ -5,7 +5,8 @@ public class Test {
         Animal animal = dog;
 
         //Downcasting - Нисходящее преобразование. Явное
-        Dog dog2 = animal;
+        Dog dog2 = (Dog) animal;
+        dog2.bark();
 
     }
 
