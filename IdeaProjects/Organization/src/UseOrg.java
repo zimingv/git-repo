@@ -3,13 +3,13 @@ public class UseOrg {
         Organization Comercial = new Organization();
         Organization Goverment = new Organization();
 
-        Comercial.name = "OMC";
-        Comercial.cash = 100000;
-        Comercial.commerc = true;
+        Comercial.setName("");
+        Comercial.setCash(-100000);
+        Comercial.setCommerc(true);
 
-        Goverment.name = "MUP Tram Control";
-        Goverment.cash = 15000;
-        Goverment.commerc = false;
+        Goverment.setName("MUP Tram Control");
+        Goverment.setCash(15000);
+        Goverment.setCommerc(false);
 
         Comercial.dislplay();
         System.out.println("Сумма налогов к уплате = " + Comercial.getTax(10));
