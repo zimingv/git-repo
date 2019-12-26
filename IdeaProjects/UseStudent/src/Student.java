@@ -41,7 +41,7 @@ public class Student {
     }
 
     public Student() {
-        System.out.println("Вы не указали имя и ID студента");
+//        System.out.println("Вы не указали имя и ID студента");
     }
 
     public Student(String name, int ID) {
