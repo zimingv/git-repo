@@ -14,7 +14,7 @@ public class DoPayrollTypeF {
 
         ptEmployee.setName("Gordon Freeman");
         ptEmployee.setJobTitle("It is hero!");
-        ptEmployee.setHourlyRate(45.18);
+        ptEmployee.setHourlyRate(10.10);
         ptEmployee.cutCheck(ptEmployee.findPaymentAmount(50));
         System.out.println();
 
@@ -22,7 +22,7 @@ public class DoPayrollTypeF {
 
         ptoEmployee.setName("Cris Norman");
         ptoEmployee.setJobTitle("Computerscience book author");
-        ptoEmployee.setHourlyRate(45.18);
+        ptoEmployee.setHourlyRate(10.10);
         ptoEmployee.cutCheck(ptoEmployee.findPaymentAmount(50));
     }
 }
