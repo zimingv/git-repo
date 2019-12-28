@@ -1,4 +1,4 @@
-public class Student {
+public class StudentNice {
     private String name;
     private int ID;
     private double GPA;
@@ -40,19 +40,27 @@ public class Student {
         return major;
     }
 
-    public Student() {
+    public StudentNice() {
 //        System.out.println("Вы не указали имя и ID студента");
     }
 
-    public Student(String name, int ID) {
+    public StudentNice(String name, int ID) {
         this.name = name;
         this.ID = ID;
     }
 
-    public Student(String name, int ID, double GPA, Profile major) {
+    public StudentNice(String name, int ID, double GPA, Profile major) {
         this.name = name;
         this.ID = ID;
         this.GPA = GPA;
         this.major = major;
+    }
+
+    public String getString() {
+        String info = "Имя студента - " + name + "\n";
+        info+= "ID студента - " + ID + "\n";
+        info+= "Средний бал = " + ((GPA > 0.0)?GPA:"нет") + "\n";
+        info+= "Специальность " + ((major != null)?major:"нет") + "\n";
+        return info;
     }
 }
