@@ -23,5 +23,5 @@ public class Player {
         decFormat.setMaximumFractionDigits(3);
         decFormat.setMinimumFractionDigits(3);
         return decFormat.format(average);
-    }
+     }
 }

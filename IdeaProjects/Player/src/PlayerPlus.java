@@ -17,7 +17,11 @@ public class PlayerPlus extends Player {
         totalOfAverages+= average;
     }
 
-    public static double findTeamAverageString() {
+    public static double findTeamAverage() {
+        return totalOfAverages / playerCount;
+    }
+
+    public static String findTeamAverageString() {
         return decFormat.format(totalOfAverages / playerCount);
     }
 }
