@@ -4,37 +4,39 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+@SuppressWarnings("serial")
 public class ClothesFrame extends JFrame {
-    public ClothesFrame() throws IOException {
+    public ClothesFrame() {
         MensClothingItem mensClothingItem;
-        Scanner clothesData = new Scanner(new File("clothes.txt"));
 
-        Font font = new Font("Verdana", Font.BOLD, 12);
-        add (new JLabel("№"));
-        add (new JLabel("  Тип одежды"));
-        add (new JLabel("Коллекция"));
+        mensClothingItem = new MensClothingItem(Clothes.Брюки, "Дизайн #7");
 
-        add (new JLabel("--------------------"));
-        add (new JLabel("  --------------------"));
-        add (new JLabel("--------------------"));
+        addClothesInfo(mensClothingItem);
+        mensClothingItem = new MensClothingItem(Clothes.Галстуки, "Дизайн #6");
 
-        for (int num = 1; num <= 9; num++) {
-            mensClothingItem = new MensClothingItem(clothesData.nextLine(), Clothes.Брюки);
-            add (new JLabel(MensClothingItem.countString()));
-            addClothesInfo(mensClothingItem);
-        }
+        addClothesInfo(mensClothingItem);
+        mensClothingItem = new MensClothingItem(Clothes.Куртки, "Дизайн #5");
 
+        addClothesInfo(mensClothingItem);
+        mensClothingItem = new MensClothingItem(Clothes.Обувь, "Дизайн #4");
+
+        addClothesInfo(mensClothingItem);
+        mensClothingItem = new MensClothingItem(Clothes.Ппальто, "Дизайн #3");
+
+        addClothesInfo(mensClothingItem);
+        mensClothingItem = new MensClothingItem(Clothes.Рубашки,"Дизайн #3");
+
+        addClothesInfo(mensClothingItem);
 
         setTitle("Одежда");
-        setLayout(new GridLayout(7,3,20,3));
+        setLayout(new GridLayout(6,2,20,3));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
-
-        clothesData.close();
     }
 
     void addClothesInfo(MensClothingItem mensClothingItem) {
-        add(new JLabel("  " + mensClothingItem.getName()));
+        add(new JLabel("  " + mensClothingItem.getKind()));
+        add(new JLabel(mensClothingItem.getName()));
     }
 }

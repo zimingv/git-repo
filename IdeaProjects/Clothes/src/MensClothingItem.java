@@ -6,8 +6,11 @@ public class MensClothingItem {
     private static int clothesCount = 0;
     private static DecimalFormat decFormat = new DecimalFormat();
 
-    public MensClothingItem(String name, Clothes kind) {
+    public MensClothingItem(String name) {
         this.name = name;
+    }
+
+    public MensClothingItem(Clothes kind) {
         this.kind = kind;
     }
 
