@@ -1,7 +1,5 @@
-import java.io.IOException;
-
 public class ShowClothesFrame {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         new ClothesFrame();
     }
 }
