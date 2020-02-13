@@ -2,7 +2,7 @@ public class EnglishSpeakingWorld {
     String mars = "  красная планета";
 
     void visitPennsylvania() {
-        System.out.println("Выполняется visitPA:");
+        System.out.println("Выполняется visitPennsylvania:");
 
         String mars = "   родной город Джанин";
 
