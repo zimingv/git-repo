@@ -11,6 +11,7 @@ public class ShowGuestFrame {
         DummiesFrame frame = new DummiesFrame("Гостиница JAVA");
         frame.addRow("Введите номер комнаты ");
         frame.setButtonText("Количество жильцов в комнате");
+
         frame.go();
 
     }
